@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:::Frontino Cultura de Comunicacion Virtual</title>
+    <link rel="styleSheet" href="style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="frontino.css" />
+
+    <link rel="shortcut icon" href="home-images/favicon.png" />
+
+    <script src="/webjars/webrtc-adapter/release/adapter.js"></script>
+    <script src="./js/conferenceroom.js"></script>
+    <script src="./js/participant.js"></script>
+    <script src="./js/kurento-utils.js"></script>
+</head>
+<body>
+
+        <div id="join" class="animate join">
+
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" id="check-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <img src="home-images/Interior-logo.png" alt="logo" />
+                <ul>
+                    <li><a href="#">Acerca de Nosotros    ...</a></li>
+                    <li><a href="#">Comenzar Una Reunion</a></li>
+                    <li><a href="#">Configurar</a></li>
+                    <li><a href="#">Gestion de Participante </a></li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+            </nav>
+            <div class="head">
+                <h1>
+                    Frontino
+                </h1>
+                <p>Cultura En Comunicacion Virtual</p>
+                    <form onsubmit="register(); return false;" accept-charset="UTF-8">
+                        <div class="search-txt" >
+                        <p>
+                            <input class="search-txt" type="text" name="name" value="" id="name"
+                                   placeholder="Usuario" required>
+                        </p>
+                        <p>
+
+                    </div>
+
+                            <input type="hidden" name="room" value="sala1" id="roomName"
+                                   placeholder="Room" required>
+                        </p>
+                        <p class="submit">
+                            <input type="submit" name="commit" value="Incorporate!">
+                        </p>
+
+
+                    </form>
+            </div>
+
+        </div>
+        <div id="room" style="display: none;">
+            <h2 id="room-header1"></h2>
+            <h2 id="room-header"></h2>
+            <h2 id="room-header2"></h2>
+            <div id="participants"></div> 
+		
+            <input type="button" id="button-leave" onmouseup="leaveRoom();"
+                   value="">
+
+            <button id="button-micro" type="button"> <img src="img/iconos/microfono.png" height ="50" width="50" /></button>
+            <button id="button-video" type="button"> <img src="img/iconos/video.png" height ="50" width="50" /></button>
+            <button id="button-chat" type="button"> <img src="img/iconos/chat.png" height ="50" width="50" /></button>
+            <button id="button-telefono" type="button"> <img src="img/iconos/telefono.png" height ="50" width="50" /></button>
+	
+        </div>
+
+</body>
+</html>
