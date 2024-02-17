@@ -1,0 +1,243 @@
+
+https://www.youtube.com/watch?v=jahhi45MkuU
+
+
+https://www.youtube.com/watch?v=ztEouABEUzY
+
+
+https://mayta.ddns.net:8443
+
+http://mayta.ddns.net/
+
+https://192.168.0.103:8443/
+
+
+aws
+
+
+3.131.83.204
+https://ec2-3-131-83-204.us-east-2.compute.amazonaws.com:8443
+
+https://3.131.83.204:8343/
+
+https://3.128.156.195:8443/
+
+Cannot bind TLS/TCP listener socket to addr 3.128.156.195:3478
+
+3.128.156.195
+
+******mi ip *************
+	45.166.16.10
+
+
+Addy D
+31 may 2017, 3:35:48 a.m.
+para kur...@googlegroups.com
+Hello All,
+
+I found following in this URL: http://doc-kurento.readthedocs.io/en/stable/tutorials/js/tutorial-helloworld.html
+
+https://192.168.0.112:8443/MyApp/person/call?ice_servers=[{"urls":"stun.l.google.com:19302"},{"urls":"stun1.l.google.com:19302"}, {"urls":"stun2.l.google.com:19302"}
+
+
+*************co
+mvn -U clean spring-boot:run \
+    -Dspring-boot.run.jvmArguments="-Dkms.url=ws://3.128.156.195:8888/kurento"
+    
+    
+    mvn -U clean spring-boot:run \
+    -Dspring-boot.run.jvmArguments="-Dkms.url=ws://45.166.16.10:8888/kurento"
+    
+    mvn spring-boot:run  -Dspring-boot.run.jvmArguments="-Dkms.url=wss://45.166.16.10:8433/kurento"
+
+TURN relay server not configured! NAT traversal requires STUN or TURN
+
+customized by exporting the mentioned variable, or editing the service settings file located at /etc/default/kurento-media-serve
+*****************************git ***********************
+git config --global core.compression 0  //para cundo no baja....  
+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
+
+git remote set-url origin https://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@github.com/GuilleCripto/produccion.git
+
+
+todo....
+     https://doc-kurento.readthedocs.io/en/latest/user/installation.html#id1
+     
+     
+Maven
+     https://doc-kurento.readthedocs.io/en/latest/user/installation_dev.html 
+     
+     
+Instalacion
+     https://doc-kurento.readthedocs.io/en/latest/user/installation.html#id1   
+     
+     
+     19302 
+     
+Programas
+
+     https://doc-kurento.readthedocs.io/en/latest/tutorials/java/tutorial-groupcall.html   
+     
+     
+pendiente Grabar conferencia.... es el record....
+
+
+Cree servicios de videoconferencia personalizados con facilidad
+
+
+sudo mkdir -p /var/www/videoConferencias/html 
+
+sudo chown -R $USER:$USER /var/www/videoConferencias/html
+
+sudo chmod -R 755 /var/www/videoConferencias
+
+sudo gedit /var/www/videoConferencias/html/index.html
+
+
+
+ssh -i "frontinowebV20.pem" ubuntu@ec2-3-128-156-195.us-east-2.compute.amazonaws.com
+
+
+https://cloudkul.com/blog/how-to-install-turn-stun-server-on-aws-ubuntu-20-04/
+
+
+
+https://www.reddit.com/r/selfhosted/comments/wayiev/how_to_test_whether_a_stunturn_server_is_working/?rdt=56647
+
+
+para los test
+    https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
+    
+otro test
+    https://icetest.info/
+    
+    
+    /opt/intellij/bin/idea.sh
+    
+    
+    
+    *************************************
+    
+ ssl con java autofirmados...
+ https://medium.com/@santiagojmamani/agregar-certificado-ssl-a-aplicaci%C3%B3n-java-con-spring-boot-98e6be92c4ed
+ 
+ 
+ *********letsencryp scrip 
+ https://letsencrypt.org/getting-started/
+ 
+ 
+ *************googlr install
+ https://www.manusoft.es/linux/instalar-google-chrome-en-ubuntu-desde-terminal/
+ 
+ kurento hello work
+ https://doc-kurento.readthedocs.io/en/latest/tutorials/js/tutorial-helloworld.html
+ 
+ test... http-server -p 8443 --ssl --cert keys/server.crt --key keys/server.key
+server.crt
+server.csr
+server.key
+
+ 
+ ********************iriun    creo que con el paso 1 anda.....
+ Step 1 : Iriun needs v4l2loopback-dkms as a dependency. First, uninstall the package and its dependencies if exits.
+
+sudo apt purge v4l2loopback-dkms
+Step 2 : Install required dependencies for Iriun.
+
+sudo apt install qt5-default
+sudo apt-get install v4l2loopback-dkms 
+
+
+*********************ICE/STUN/TURN
+https://tech.bloggernepal.com/2021/05/setup-stun-and-turn-server-on-ubuntu.html
+el videoo... https://www.youtube.com/watch?v=SiLoZWsP4KM
+
+1) Necesitamos un certificado....
+    We need SSL certificate to configure out TURN server, so let's generate the SSL certificate using Let's Encrypt.
+    
+2) Necesitamos un servidor apt-get install nginx 
+		https://help.clouding.io/hc/es/articles/360011412180-Instalaci%C3%B3n-de-servidor-Web-con-NGINX-y-Let-s-Encrypt-en-Ubuntu-22-04-LTS
+		
+	mkdir -p /var/www/html/frontinos.onthewifi.com/www
+	ln -s /etc/nginx/sites-available/frontinos.onthewifi.com.conf /etc/nginx/sites-enabled
+
+3) un dominio  ===>  frontinos.onthewifi.com   
+
+  # sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/frontinos.onthewifi.com.conf
+  
+4) Una vez instalado nginx, vamos ha crar los certificados.....
+   apt install certbot python3-certbot-nginx
+   apt install certbot python3-certbot-apache ///ojo no va
+   
+   certbot --nginx -d frontinos.onthewifi.com  -d www.frontinos.onthewifi.com 
+   
+   https://frontinos.onthewifi.com/ 
+
+
+5) ojo con esto....
+     ssl_certificate /etc/letsencrypt/live/frontinos.onthewifi.com/fullchain.pem;
+     ssl_certificate_key /etc/letsencrypt/live/frontinos.onthewifi.com	/privkey.pem; 
+     include /etc/letsencrypt/options-ssl-nginx.conf;
+     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+     
+     
+     
+ ufw
+ 
+ ufw allow 49152:65535/tcp
+
+sudo ufw allow 5000:5050/udp
+
+    3478-3479 TCP & UDP: Needed by TURN/STUN
+    49152 - 65535 UDP: Needed by TURN/STUN as per RFC 5766
+
+**************	turn
+ 
+ user=turnuser:turnuser456
+ 
+ turnURL=turnuser:turnuser456@13.128.156.195:3478?transport=udp
+
+ 
+ testturn *************
+ https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
+ 
+ turnserver -L 45.166.16.10 -o -a -f -r frontinos.onthewifi.com
+ 
+ ****************generar clave spring boot....
+ openssl pkcs12 -export -in fullchain.pem  -inkey privkey.pem  -out keystore.p12  -name tomcat -CAfile chain.pem -caname root
+ 
+ ************probar servidores stun
+ https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
+ https://icetest.info/
+ 
+ ***************configurar coturn.....
+ https://stackoverflow.com/questions/50049123/coturn-cannot-find-credentials-of-user
+ 
+ 
+ sudo lsof -i -P -n | grep LISTEN
+
+ https://www.metered.ca/blog/coturn/
+ 
+ 
+ ***************configurar kurento******************
+ https://doc-kurento.readthedocs.io/en/latest/user/configuration.html#stun-turn-server
+ https://doc-kurento.readthedocs.io/en/stable/tutorials/js/tutorial-helloworld.html
+ https://groups.google.com/g/kurento/c/j4z0k1lfqPg
+ https://doc-kurento.readthedocs.io/en/latest/user/faq.html
+ 
+ 
+ tutria
+ https://idus.us.es/bitstream/handle/11441/126985/TFG-3748-GUTIERREZ%20HERMIDA.pdf?sequence=1&isAllowed=y
+ 
+ 
+ *******************configuracion de servicios....
+    1) cotun
+       1.2 /etc/default/coturn 
+           TURNSERVER_ENABLED=1
+       1.2) /etc/turnserver.conf: 
+       Kurento
+       /etc/kurento/modules/kurento/WebRtcEndpoint.conf.ini
+ 
+ ************************ojo con vidu***************
+ https://docs.openvidu.io/en/stable/tutorials/openvidu-react/
+
